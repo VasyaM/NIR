@@ -4,7 +4,7 @@ import random
 import numpy as np
 import  matplotlib
 import matplotlib.pyplot as plt
-N = 10  # Number of abonents
+N = 20  # Number of abonents
 p = 0.01  # p of message
 
 FN = 200  # number of frames
@@ -95,9 +95,9 @@ def Simulate():
     return out
 SrtList =[]
 px=[]
-for i in range(32):
-    p+=0.03
-    print(i,'/31')
+for i in range(9):
+    p+=(1/N)/9
+    print(i,'/10')
     px.append(p)
     reset()
     SrtList.append(Simulate())
